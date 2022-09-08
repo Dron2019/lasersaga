@@ -1,0 +1,84 @@
+
+extends ../layout/main
+block variable
+block meta
+  title= 'Contacts'
+  meta(name='description', content='')
+block head
+    link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+  script(defer src='./assets/scripts/vendors.bundle.js')
+  script(defer src='./assets/scripts/index.bundle.js')
+  script(defer src='./assets/scripts/libs.js')
+  script(defer src='./assets/scripts/header.js')
+  script(defer src='./assets/scripts/menu.js')
+  script(defer src='./assets/scripts/footer.js')
+block content
+  .container-page-header
+    .horizontal-red 
+    .vertical-red-left 
+    .page-header
+      .noise
+      .page-header-content
+        ul.breadcrumbs 
+          li.breadcrumbs-item 
+            a(href="main.html") 
+              span Home
+          li.breadcrumbs-item.breadcrumbs-item-active 
+            a(href="equipment-more.html") 
+              span Contacts
+        h2(data-text="Contacts").page-title 
+          span Contacts 
+    .vertical-red-right
+    .horizontal-red-bottom 
+  
+  .contacts-container 
+    ul.address-content
+      li.address-content-item
+        p.title Middle East Branch:
+        a(href="https://goo.gl/maps/knAS6HFbQWiVUQTZA" target="_blank").description
+          span Dubai, United Arab Emirates
+      li.address-content-item
+        p.title Phone:
+        a(href="tel:+971558449890").description +97 (155) 844-98-90
+      li.address-content-item
+        p.title Email:
+        a(href="mailto:ls@uaelaser.com").description ls@uaelaser.com
+      li.address-content-item 
+        p  Get Social:
+        ul.social-list
+          li.social-item 
+            a(href="#") Telegram
+          li.social-item 
+            a(href="#") WhatsApp
+          li.social-item 
+            a(href="#") Instagram
+          li.social-item 
+            a(href="#") Facebook
+          li.social-item 
+            a(href="#") Youtube 
+    .contacts-call
+      button(class="form-button form-button-contact form-button-js" type="submit") 
+        .form-button-footer
+          span.btn-text Call back
+          <svg  class="btn-submite" viewBox="0 0 420 100" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="hover-shadow" d="M407 97V100H13V97H8V94H4V91H0V36H5V33H9V29H13V24H407V28H411V31H415V35H420V91H416V94H412V97H407Z" fill="#DADADC"/>
+            <rect x="14.5" y="22.1216" width="391" height="57.1081" fill="#F1F1F1" stroke="black"/>
+            <rect x="12.5" y="22.4995" width="395" height="66" fill="#F1F1F1" stroke="black"/>
+            <rect x="8.5" y="24.4995" width="4" height="61" fill="#F1F1F1" stroke="black"/>
+            <rect x="4.5" y="30.4995" width="4" height="52" fill="#F1F1F1" stroke="black"/>
+            <rect x="0.5" y="34.4995" width="4" height="45" fill="#F1F1F1" stroke="black"/>
+            <rect x="-0.5" y="0.5" width="4" height="59" transform="matrix(-1 0 0 1 411 25.9995)" fill="#F1F1F1" stroke="black"/>
+            <rect x="-0.5" y="0.5" width="4" height="51" transform="matrix(-1 0 0 1 415 31.9995)" fill="#F1F1F1" stroke="black"/>
+            <rect x="-0.5" y="0.5" width="4" height="42" transform="matrix(-1 0 0 1 419 37.9995)" fill="#F1F1F1" stroke="black"/>
+            <path class="hover-fill" d="M407 77.5H407.5V77V74.5H411H411.5V74V71.5H415H415.5V71V68.5H419H419.5V68V12V11.5H419H415.5V8V7.5H415H411.5V5V4.5H411H407.5V1V0.5H407H13H12.5V1V5.5H9H8.5V6V9.5H5H4.5V10V12.5H1H0.5V13V68V68.5H1H4.5V71V71.5H5H8.5V74V74.5H9H12.5V77V77.5H13H407Z" stroke="black"/>
+          </svg>
+      img(src="./assets/images/contacts.jpg", alt="")
+
+block header
+  include ../includes/header.pug
+
+block footer
+  include ../includes/footer.pug
+
+

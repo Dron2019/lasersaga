@@ -1,0 +1,24 @@
+
+extends ../layout/main
+block variable
+block meta
+  title= 'Main'
+  meta(name='description', content='')
+block head
+    link(rel='stylesheet', href="./assets/styles/main.min.css")
+block scripts
+  script(defer src='./assets/scripts/vendors.bundle.js')
+  script(defer src='./assets/scripts/index.bundle.js')
+  script(defer src='./assets/scripts/libs.js')
+  script(defer src='./assets/scripts/header.js')
+  script(defer src='./assets/scripts/menu.js')
+block content
+  .main-img
+    img(src="./assets/images/main.jpg", alt="").main-img
+
+block header
+  include ../includes/header.pug
+
+
+
+

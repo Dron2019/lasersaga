@@ -1,0 +1,258 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  width: 100%;
+  // pointer-events: none;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: var(--header-h);
+  @include to(1440px) {
+    height: var(--header-h);
+    padding: 0 40px;
+  }
+  @include to(575px) {
+    height: var(--header-h);
+    padding: 0 20px;
+  }
+  .icon--logo {
+    width: 364px;
+    height: 35px;
+    fill: $black;
+    stroke: $black;
+    transition: $transition-fuction;
+    &:hover {
+      @include from(992px) {
+        fill: $red;
+        stroke: $red;
+      }
+    }
+    @include to(1440px) {
+      width: 264px;
+      height: 25px;
+    }
+    @include to(575px) {
+      display: none;
+    }
+  }
+  .icon--logo-mobile {
+    display: none;
+    @include to(575px) {
+      display: block;
+      width: 69px;
+      height: 28px;
+    }
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    .social-list {
+      display: flex;
+      margin-right: 100px;
+      @include to(1440px) {
+        margin-right: 50px;
+      }
+      @include to(992px) {
+        margin-right: 10px;
+      }
+      .social-item {
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        @include to(1440px) {
+          margin-right: 10px;
+          width: 40px;
+          height: 40px;
+        }
+        @include to(575px) {
+          width: 35px;
+          height: 35px;
+          display: none;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        .social-link {
+          svg {
+            width: 50px;
+            height: 50px;
+            fill: none;
+            stroke: $black;
+            transition: $transition-fuction;
+            @include to(1440px) {
+              width: 40px;
+              height: 40px;
+            }
+            @include to(575px) {
+              width: 35px;
+              height: 35px;
+            }
+            &:hover {
+              @include from(992px) {
+                stroke: $red;
+              }
+            }
+          }
+        }
+        .icon--whatsapp {
+          width: 50px;
+          height: 50px;
+          fill: none;
+          stroke: $black;
+          transition: $transition-fuction;
+          path {
+            fill: $black;
+            stroke: none;
+            transition: $transition-fuction;
+          }
+          &:hover {
+            @include from(992px) {
+              stroke: $red;
+              path {
+                fill: $red;
+              }
+            }
+          }
+          @include to(1440px) {
+            width: 40px;
+            height: 40px;
+          }
+          @include to(575px) {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+    .header-tel {
+      margin-right: 100px;
+      text-decoration: none;
+      color: $black;
+      padding: 10px 20px;
+      border: 1px solid $black;
+      border-radius: 30px;
+      transition: border color 0.2s ease-in-out;
+      // transition: $transition-fuction;
+      @include to(1440px) {
+        margin-right: 50px;
+        padding: 8px 20px;
+        font-size: 20px;
+      }
+      @include to(992px) {
+        display: none;
+      }
+      &:hover {
+        @include from(992px) {
+          color: $red;
+          border: 1px solid $red;
+        }
+      }
+    }
+    .header-call {
+      margin-right: 100px;
+      font-family: $default-font;
+      font-size: 24px;
+      border: none;
+      background: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      padding: 0;
+      display: inline-block;
+      position: relative;
+      // transition: $transition-fuction;
+      transition: stroke color 0.2s ease-in-out;
+
+      @include to(1440px) {
+        margin-right: 50px;
+        font-size: 20px;
+      }
+      @include to(992px) {
+        display: none;
+      }
+      &:hover {
+        @include from(992px) {
+          color: $red;
+          .header-call-underline {
+            transform: translate3d(-66.6%, 0, 0);
+            stroke: $red;
+          }
+        }
+      }
+      .header-call-underline {
+        position: absolute;
+        top: 0;
+        stroke-width: 3px;
+        transition: transform 0.7s;
+        transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+        stroke: $black;
+        left: 0;
+        pointer-events: none;
+        fill: none;
+        // transition: all 0.4s ease-in-out;
+      }
+    }
+    .header-menu {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: $transition-fuction;
+      &:hover {
+        @include from(992px) {
+          color: $red;
+          svg {
+            stroke: $red;
+          }
+        }
+      }
+      span {
+        margin-right: 10px;
+        font-size: 20px;
+        @include to(992px) {
+          font-size: 16px;
+        }
+        @include to(575px) {
+          // display: none;
+          font-size: 14px;
+        }
+      }
+      svg {
+        width: 50px;
+        height: 50px;
+        fill: none;
+        stroke: $black;
+        transition: $transition-fuction;
+        @include to(1440px) {
+          width: 40px;
+          height: 40px;
+        }
+        @include to(575px) {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
+}
+.header-js.not-on-top {
+  border-bottom: 1px solid $black;
+}
+.phone-tablet {
+  width: 40px;
+  height: 40px;
+  fill: $white;
+  stroke: $black;
+  margin-right: 40px;
+  display: none;
+  @include to(992px) {
+    display: block;
+  }
+  @include to(575px) {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+}

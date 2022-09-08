@@ -1,0 +1,105 @@
+.downloads-container {
+  h5 {
+    padding: 30px 187px;
+    background: $black;
+    font-size: 48px;
+    line-height: 130%;
+    color: #ffffff;
+    @include to(1440px) {
+      padding: 20px 132px;
+      font-size: 42px;
+    }
+    @include to(992px) {
+      padding: 20px 82px;
+      font-size: 34px;
+    }
+    @include to(575px) {
+      padding: 20px 20px;
+      font-size: 22px;
+    }
+  }
+  .downloads-list {
+    display: flex;
+    flex-direction: column;
+    .downloads-item {
+      border-bottom: 1px solid $black;
+      width: 100%;
+      padding: 20px 187px;
+      transition: $transition-fuction;
+      @include to(1440px) {
+        padding: 32px 132px;
+      }
+      @include to(992px) {
+        padding: 20px 140px 20px 82px;
+        position: relative;
+      }
+      @include to(575px) {
+        padding: 20px 70px 20px 20px;
+      }
+      &:hover {
+        @include from(992px) {
+          border-bottom: 1px solid $red;
+          a {
+            color: $red;
+          }
+          svg {
+            stroke: $red;
+            .fill {
+              fill: $red;
+            }
+          }
+        }
+      }
+      a {
+        width: 100%;
+        text-decoration: none;
+        font-size: 36px;
+        line-height: 100%;
+        color: #000000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: $transition-fuction;
+        @include to(1440px) {
+          font-size: 30px;
+        }
+        @include to(992px) {
+          font-size: 20px;
+        }
+        @include to(575px) {
+          font-size: 18px;
+        }
+        svg {
+          width: 80px;
+          height: 80px;
+          fill: #ffffff;
+          stroke: $black;
+          transition: $transition-fuction;
+          .fill {
+            fill: $black;
+            stroke: $white;
+            transition: $transition-fuction;
+          }
+          @include to(1440px) {
+            width: 60px;
+            height: 60px;
+          }
+          @include to(992px) {
+            width: 40px;
+            height: 40px;
+            margin-left: 40px;
+            position: absolute;
+            right: 82px;
+            top: 50%;
+            transform: translate(0%, -50%);
+          }
+          @include to(575px) {
+            width: 35px;
+            height: 35px;
+            right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
