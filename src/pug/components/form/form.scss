@@ -686,6 +686,21 @@
 .input-message {
   display: none;
 }
+.feedback-form {
+  .form-field-input {
+    position: relative;
+  }
+  .input-message {
+    // display: none;
+    font-size: 12px;
+    color: #ff2800;
+    position: absolute;
+    display: initial;
+    left: 0;
+    bottom: 0;
+    font-family: $default-font;
+  }
+}
 [data-btn-submit-text] {
   display: none !important;
 }

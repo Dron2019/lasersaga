@@ -520,10 +520,7 @@
         height: 70px;
       }
 
-      &:nth-child(1),
-      &:nth-child(3),
-      &:nth-child(5),
-      &:nth-child(7) {
+      &:nth-child(odd) {
         animation: littleMove var(--moveDuration) linear infinite;
         // @include to(575px) {
         //   &:nth-child(5),
@@ -533,10 +530,7 @@
         // }
       }
 
-      &:nth-child(2),
-      &:nth-child(4),
-      &:nth-child(6),
-      &:nth-child(8) {
+      &:nth-child(even) {
         animation: littleMoveR var(--moveDuration) linear infinite;
         // @include to(575px) {
         //   &:nth-child(3),
@@ -691,6 +685,7 @@
     @include to(1920px) {
       margin-left: 197px;
       width: 1076px;
+      width: calc((100vw - (9.73958vw * 2)) - 197px - 15vw);
     }
     @include to(1440px) {
       margin-left: 127px;
@@ -837,6 +832,10 @@
             margin-top: 30px;
             border: 1px solid #000000;
             padding: 16px 30px;
+            @include from(1441px){
+              width: 85%;
+              margin-right: auto;
+            }
             @include to(1440px) {
               padding: 12px 20px;
             }

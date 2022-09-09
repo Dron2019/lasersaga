@@ -262,6 +262,7 @@ const lang = langDetect();
           sendingSuccessText: 'Ждите ответа наших менеджеров',
           sendingErrorText: 'Ждите ответа наших менеджеров',
           sendingErrorTitle: 'Ошибка',
+          invalidEmail: 'Неправильный email адрес',
           send_fail: 'Сообщение не было отправлено за неизвестной ошибки сервера. Код: [send_fail]',
           invalid_form:
             'Сообщение не было отправлено за неизвестной ошибки сервера. Код: [invalid_form]',
@@ -282,6 +283,7 @@ const lang = langDetect();
           phone: 'Телефон:*',
           send: 'Надіслати',
           sending: 'Відправлення',
+          invalidEmail: 'Неправильна електронна пошта',
           field_too_short: 'Телефон має містити принаймні {{cnt}} символів',
           field_too_long: 'Телефон має містити не більше {{cnt}} символів',
           only_number: 'тут лише цифри',
@@ -320,6 +322,7 @@ const lang = langDetect();
           sendingSuccessText: 'Wait for the answers of our managers',
           sendingErrorText: 'Wait for the answers of our managers',
           sendingErrorTitle: 'An error has occurred',
+          invalidEmail: 'Invalid email address',
           send_fail: 'The message was not sent due to an unknown server error. Code: [send_fail] ',
           invalid_form:
             'The message was not sent for an unknown server error. Code: [invalid_form] ',

@@ -69,7 +69,7 @@ formsTel.forEach((form) => {
               $field: $form.querySelector('[data-field-email]'),
               typeInput: 'email',
             }),
-            rule: yup.string().matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/),
+            rule: yup.string().required(i18next.t('required')).matches(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, i18next.t('invalidEmail')),
 
             defaultMessage: i18next.t('phone'),
             valid: false,
