@@ -131,6 +131,7 @@
         border-bottom: none;
         grid-column: 1;
         grid-row: 1;
+        overflow: hidden;
         img {
           // transform: scale(0.5);
           object-fit: none;

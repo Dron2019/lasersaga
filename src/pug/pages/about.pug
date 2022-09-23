@@ -56,31 +56,35 @@ block content
         //- .swiper-slide.slide-title
         //-   .swiper-slide-content
         //-     p.specialities-title What are our specialities?
-        .swiper-slide
-          .swiper-slide-content
-            a(href="services.html#laser-shows")
-              img(src="./assets/images/work-slider3.jpg", alt="")
-              p Laser Light Shows
-        .swiper-slide
-          .swiper-slide-content
-            a(href="services.html#3d-video")
-              img(src="./assets/images/about-slide2.jpg", alt="")
-              p 3D Video Mapping Projection
-        .swiper-slide
-          .swiper-slide-content
-            a(href="services.html#multimedia-show")
-              img(src="./assets/images/about-slide3.jpg", alt="")
-              p Multimedia Show Production
-        .swiper-slide
-          .swiper-slide-content
-            a(href="services.html#3d-video")
-              img(src="./assets/images/about-slide2.jpg", alt="")
-              p 3D Video Mapping Projection
-        .swiper-slide
-          .swiper-slide-content
-            a(href="services.html#laser-light")
-              img(src="./assets/images/work-slider3.jpg", alt="")
-              p Laser Light Shows
+        - 
+          var slides = ['Concerts.jpg',  'goverment-events.JPG',  'product-launches.jpg',  'special-projects.JPG',  'video-production.jpg',];
+          var texts = ['Concerts',  'Goverment events',  'Product launches',  'Special projects',  'Video production',];
+        each val, index in slides 
+          .swiper-slide
+            .swiper-slide-content
+              a(href="services.html#laser-shows")
+                img(src="./assets/images/about/"+val, alt="")
+                p #{texts[index]}
+        //- .swiper-slide
+        //-   .swiper-slide-content
+        //-     a(href="services.html#3d-video")
+        //-       img(src="./assets/images/about-slide2.jpg", alt="")
+        //-       p 3D Video Mapping Projection
+        //- .swiper-slide
+        //-   .swiper-slide-content
+        //-     a(href="services.html#multimedia-show")
+        //-       img(src="./assets/images/about-slide3.jpg", alt="")
+        //-       p Multimedia Show Production
+        //- .swiper-slide
+        //-   .swiper-slide-content
+        //-     a(href="services.html#3d-video")
+        //-       img(src="./assets/images/about-slide2.jpg", alt="")
+        //-       p 3D Video Mapping Projection
+        //- .swiper-slide
+        //-   .swiper-slide-content
+        //-     a(href="services.html#laser-light")
+        //-       img(src="./assets/images/work-slider3.jpg", alt="")
+        //-       p Laser Light Shows
       //+svg('cursor').btn-works
 
   section.team
@@ -235,14 +239,16 @@ block content
         h4 Our friends
       .friends-description
         ul.friends-description-list
-          li.friends-description-item
-            img(src="./assets/images/Logo_Lightconverse.jpg", alt="")
+          //- li.friends-description-item
+          //-   img(src="./assets/images/Logo_Lightconverse.jpg", alt="")
           li.friends-description-item
             img(src="./assets/images/Logo_Pangolin-Laser.jpg", alt="")
           li.friends-description-item
             img(src="./assets/images/Logo-Kvant-Laser.jpg", alt="")
           li.friends-description-item
-            img(src="./assets/images/Logo-Laser-Studio.jpg", alt="")
+            img(src="./assets/images/ILDA-blue-logo.jpg", alt="ILDA")
+          //- li.friends-description-item
+            //- img(src="./assets/images/Logo-Laser-Studio.jpg", alt="")
           //- li.friends-description-item
           //-   img(src="./assets/images/Logo-Laser-Studio.jpg", alt="")
     .container-call-back

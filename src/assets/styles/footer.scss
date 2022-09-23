@@ -508,6 +508,7 @@ footer {
       }
       .hover-shadow {
         transition: $transition-fuction;
+        display: none;
       }
       &:hover {
         @include from(992px) {

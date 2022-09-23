@@ -418,6 +418,10 @@
     top: 50%;
     left: 8%;
     transform: translate(-8%, -50%);
+    @include to(575px){
+      top: auto;
+      bottom: 20px;
+    }
   }
   .popup-button-next {
     z-index: 10;
@@ -429,6 +433,8 @@
       top: 50%;
       right: 7%;
       transform: translate(-7%, -50%);
+      top: auto;
+      bottom: 20px;
     }
   }
 }

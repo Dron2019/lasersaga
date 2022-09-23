@@ -97,7 +97,7 @@
   }
   .form {
     padding: 150px 187px 120px 187px;
-    height: 70vh;
+    height: 75vh;
     position: relative;
     @include to(1440px) {
       padding: 80px 132px 60px 132px;
@@ -109,7 +109,7 @@
     }
     @include to(575px) {
       padding: 25px 20px;
-      height: 67vh;
+      height: 75vh;
     }
     .form-close {
       position: absolute;

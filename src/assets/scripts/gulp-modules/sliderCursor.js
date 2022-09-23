@@ -26,7 +26,7 @@ function initSliderCursor(cursor, swiper, container) {
   });
 }
 
-const cursorHtml = `<svg class="icon--cursor js-cursor-slider" role="presentation">
+let cursorHtml = `<svg class="icon--cursor js-cursor-slider" role="presentation">
   <use xlink:href="#icon-cursor"></use>
 </svg>`;
 document.body.insertAdjacentHTML('beforeend', cursorHtml);

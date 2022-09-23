@@ -142,23 +142,41 @@
   @include to(575px) {
     padding: 30px 20px 30px 20px;
   }
+  
   &-swiper {
+    --pl: 21vw;
     padding-left: 21vw;
+    padding-left: var(--pl);
+    position: relative;
+    @include from(576px){
+
+      // &:after {
+      //   content: '';
+      //   position: absolute;
+      //   right: calc(100% - var(--pl));
+      //   top: -5px;
+      //   width: 100vw;
+      //   height: calc(100% + 10px);
+      //   z-index: 1;
+      //   background-color: #fff;
+      // }
+    }
     @include to(1920px) {
-      padding-left: 470px;
+      --pl: 470px;
     }
     @include to(1440px) {
-      padding-left: 335px;
+      --pl: 335px;
     }
     @include to(992px) {
-      padding-left: 186px;
+      --pl: 186px;
     }
     @include to(575px) {
-      padding-left: 0;
+      --pl: 0;
       padding-top: 42px;
     }
     .swiper-wrapper {
       background: #ffffff;
+      z-index: 0;
     }
     .swiper-slide {
       width: 41%;
@@ -217,7 +235,9 @@
   text-transform: uppercase;
   color: #000000;
   width: 293px;
-  position: absolute;
+  // position: absolute;
+  margin-bottom: 15px;
+  z-index: 2;
   @include to(1440px) {
     font-size: 18px;
     width: 208px;
@@ -229,6 +249,7 @@
   @include to(575px) {
     font-size: 18px;
     width: 100%;
+    margin-bottom: 0;
   }
 }
 .team {
