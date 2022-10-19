@@ -97,13 +97,19 @@
   }
   .form {
     padding: 150px 187px 120px 187px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
     height: 75vh;
     position: relative;
     @include to(1440px) {
       padding: 80px 132px 60px 132px;
+      padding-left: var(--side-padding);
+      padding-right: var(--side-padding);
     }
     @include to(992px) {
       padding: 50px 82px 60px 82px;
+      padding-left: var(--side-padding);
+      padding-right: var(--side-padding);
       // height: 80vh;
       height: auto;
     }

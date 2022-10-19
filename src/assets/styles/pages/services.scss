@@ -18,16 +18,19 @@
     grid-column: 1/2;
     grid-row: 1;
     padding: 100px 0 0 187px;
+    padding-left: var(--side-padding);
     font-size: 24px;
     line-height: 150%;
     text-transform: uppercase;
     color: #000000;
     @include to(1440px) {
       padding: 80px 0 0 132px;
+      padding-left: var(--side-padding);
       font-size: 18px;
     }
     @include to(992px) {
       padding: 30px 0 0 82px;
+      padding-left: var(--side-padding);
       font-size: 12px;
       width: 113px;
     }
@@ -43,11 +46,17 @@
     grid-column: 2/2;
     grid-row: 1;
     padding: 100px 187px 100px 0;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
     @include to(1440px) {
       padding: 80px 132px 80px 0;
+      padding-left: var(--side-padding);
+      padding-right: var(--side-padding);
     }
     @include to(992px) {
       padding: 30px 82px 60px 0;
+      padding-left: var(--side-padding);
+      padding-right: var(--side-padding);
     }
     @include to(575px) {
       grid-column: 1/-1;
@@ -157,14 +166,20 @@
     line-height: 130%;
     color: #000000;
     padding: 29px 187px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
     transition: $transition-fuction;
     @include to(1440px) {
       font-size: 34px;
       padding: 24px 132px;
+      padding-left: var(--side-padding);
+      padding-right: var(--side-padding);
     }
     @include to(992px) {
       font-size: 22px;
       padding: 20px 82px;
+      padding-left: var(--side-padding);
+      padding-right: var(--side-padding);
     }
     @include to(575px) {
       font-size: 20px;
@@ -173,11 +188,17 @@
   }
   &-panel {
     padding: 21px 187px 50px 187px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
     @include to(1440px) {
       padding: 16px 132px 40px 132px;
+      padding-left: var(--side-padding);
+      padding-right: var(--side-padding);
     }
     @include to(992px) {
       padding: 10px 82px 30px 82px;
+      padding-left: var(--side-padding);
+      padding-right: var(--side-padding);
     }
     @include to(575px) {
       padding: 0 20px 30px 20px;
@@ -187,15 +208,18 @@
     position: absolute;
     cursor: pointer;
     right: 187px;
+    right: var(--side-padding);
     top: 20px;
     transition: $transition-fuction;
     pointer-events: none;
     @include to(1440px) {
       right: 132px;
+      right: var(--side-padding);
       top: 16px;
     }
     @include to(992px) {
       right: 82px;
+      right: var(--side-padding);
       top: 14px;
     }
     @include to(575px) {
@@ -403,9 +427,9 @@
     }
   }
   .description-swiper {
-    width: 920px;
+    width: 50%;
     @include to(1440px) {
-      width: 655px;
+      width: 50%;
     }
     @include to(992px) {
       width: 100%;
@@ -421,10 +445,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 920px;
+        width: 50%;
         height: 555px;
         @include to(1440px) {
-          width: 655px;
+          width: 50%;
           height: 395px;
         }
         @include to(575px) {

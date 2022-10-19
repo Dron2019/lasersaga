@@ -222,11 +222,15 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #000000;
-  @include to(1440px) {
+  @include to(1680px) {
     padding: 25px 132px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(992px) {
     padding: 18px 82px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
     flex-direction: column;
   }
   @include to(575px) {
@@ -391,10 +395,14 @@
   flex-wrap: wrap;
   @include to(1440px) {
     padding: 40px 132px 30px 132px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
     --offset: 50px;
   }
   @include to(992px) {
     padding: 30px 82px 40px 82px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
     --offset: 20px;
   }
   @include to(575px) {
@@ -573,13 +581,19 @@
   // padding: 100px 0 100px 187px;
   padding: 100px 187px;
   border-bottom: 1px solid #414141;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
   @include to(1440px) {
     // padding: 80px 0 80px 132px;
     padding: 80px 132px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(992px) {
     // padding: 60px 0 60px 82px;
     padding: 60px 82px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(575px) {
     // padding: 30px 0 30px 20px;

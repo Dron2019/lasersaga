@@ -31,18 +31,26 @@ $transition-fuction: all 0.2s ease-in-out;
   // --logo-w: 160px;
   // --sliceFigure: 239px;
   // --sliceFigure-big: 541px;
+  --side-padding: 132px;
 }
 
+@media screen and (max-width: 1680px) {
+  :root {
+    --side-padding: 50px;
+  }
+}
 @media screen and (max-width: 1440px) {
   :root {
     --header-h: 60px;
     // --logo-w: 230px;
     // --sliceFigure-big: 362px;
+    --side-padding: 50px;
   }
 }
 @media screen and (max-width: 992px) {
   :root {
     --header-h: 60px;
+    --side-padding: 20px;
     // --logo-w: 90px;
     // --sliceFigure-big: 44px;
   }
@@ -50,6 +58,7 @@ $transition-fuction: all 0.2s ease-in-out;
 @media screen and (max-width: 576px) {
   :root {
     --header-h: 50px;
+    --side-padding: 10px;
     // --sliceFigure: 100px;
     // --sliceFigure-big: 100px;
   }

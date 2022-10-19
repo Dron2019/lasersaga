@@ -15,12 +15,18 @@ footer {
       display: flex;
       justify-content: space-between;
       padding: 50px 100px 100px 187px;
+      padding-left: var(--side-padding);
+      padding-right: var(--side-padding);
       border-right: 1px solid #414141;
       @include to(1440px) {
         padding: 40px 68px 80px 132px;
+        padding-left: var(--side-padding);
+        padding-right: var(--side-padding);
       }
       @include to(992px) {
         padding: 30px 50px 60px 82px;
+        padding-left: var(--side-padding);
+        padding-right: var(--side-padding);
         flex-direction: column;
         width: 35%;
       }
@@ -119,11 +125,14 @@ footer {
       display: flex;
       justify-content: space-between;
       padding: 50px 357px 100px 30px;
+      padding-right: calc(var(--side-padding) + 82px);
       @include to(1440px) {
         padding: 40px 254px 80px 20px;
+        padding-right: calc(var(--side-padding) + 62px);
       }
       @include to(992px) {
         padding: 30px 160px 60px 20px;
+        padding-right: var(--side-padding);
         width: 65%;
       }
       @include to(575px) {
@@ -355,12 +364,18 @@ footer {
 .footer-form {
   width: 100%;
   padding: 50px 187px;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
   border-bottom: 1px solid #414141;
   @include to(1440px) {
     padding: 40px 132px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(992px) {
     padding: 30px 82px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(575px) {
     padding: 30px 20px 50px 20px;
@@ -562,13 +577,19 @@ footer {
 .footer-rights-reserved {
   width: 100%;
   padding: 40px 187px 0 187px;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
   display: flex;
   justify-content: space-between;
   @include to(1440px) {
     padding: 40px 132px 0 132px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(992px) {
     padding: 30px 82px 0 82px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(575px) {
     padding: 10px 20px 0 20px;

@@ -1,12 +1,18 @@
 .contacts-container {
   padding: 50px 187px 100px 187px;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
   display: flex;
   width: 100%;
   @include to(1440px) {
     padding: 50px 132px 80px 132px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(992px) {
     padding: 30px 82px 80px 82px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
     flex-direction: column-reverse;
     position: relative;
   }

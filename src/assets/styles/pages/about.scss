@@ -17,6 +17,8 @@
     padding: 15px 20px 30px 20px;
     flex-direction: column;
   }
+  padding-left: var(--side-padding) !important;
+  padding-right: var(--side-padding) !important;
   &-title {
     h4 {
       font-size: 36px;
@@ -66,10 +68,12 @@
     margin-left: vw(197, 1920);
     @include to(1440px) {
       margin-left: 127px;
+      margin-left: var(--side-padding);
       width: 767px;
     }
     @include to(992px) {
       margin-left: 71px;
+      margin-left: var(--side-padding);
       width: 421px;
     }
     @include to(575px) {
@@ -142,11 +146,13 @@
   @include to(575px) {
     padding: 30px 20px 30px 20px;
   }
-  
+  padding-left: var(--side-padding) !important;
+  padding-right: var(--side-padding) !important;
   &-swiper {
     --pl: 21vw;
     padding-left: 21vw;
     padding-left: var(--pl);
+    --pl: calc(25% - var(--side-padding));
     position: relative;
     @include from(576px){
 
@@ -162,13 +168,16 @@
       // }
     }
     @include to(1920px) {
-      --pl: 470px;
+      --pl: 25%;
+      --pl: calc(25% - var(--side-padding));
     }
     @include to(1440px) {
-      --pl: 335px;
+      --pl: 25%;
+      --pl: calc(25% - var(--side-padding));
     }
     @include to(992px) {
-      --pl: 186px;
+      --pl: 25%;
+      --pl: calc(25% - var(--side-padding));
     }
     @include to(575px) {
       --pl: 0;
@@ -272,6 +281,8 @@
     padding: 30px 20px;
     flex-direction: column;
   }
+  padding-left: var(--side-padding) !important;
+  padding-right: var(--side-padding) !important;
   &-title {
     h4 {
       font-size: 24px;
@@ -300,6 +311,7 @@
     flex: 1 1 40%;
     width: 10vw;
     margin-left: vw(197, 1920);
+    margin-left: var(--side-padding);
     // @include to(1920px) {
     //   margin-left: 197px;
     //   width: 1076px;
@@ -308,9 +320,11 @@
       // margin-left: 127px;
       // width: 767px;
       margin-left: vw(127, 1440);
+      margin-left: var(--side-padding);
     }
     @include to(992px) {
       margin-left: 71px;
+      margin-left: var(--side-padding);
       width: 421px;
     }
     @include to(575px) {
@@ -446,12 +460,18 @@
   justify-content: space-between;
   @include to(1920px) {
     justify-content: flex-start;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(1440px) {
     padding: 80px 132px 54px 132px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(992px) {
     padding: 60px 82px 45px 82px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(575px) {
     padding: 30px 20px 0 20px;
@@ -481,18 +501,23 @@
   }
   &-description {
     margin-left: 197px;
-    width: 1400px;
+    margin-left: var(--side-padding);
+    // width: 1400px;
+    width: 75%;
     @include to(1920px) {
       margin-left: 197px;
-      width: 1076px;
+      margin-left: var(--side-padding);
+      // width: 1076px;
     }
     @include to(1440px) {
       margin-left: 127px;
-      width: 767px;
+      margin-left: var(--side-padding);
+      // width: 767px;
     }
     @include to(992px) {
       margin-left: 71px;
-      width: 421px;
+      margin-left: var(--side-padding);
+      // width: 421px;
     }
     @include to(575px) {
       margin-left: 0;
@@ -603,12 +628,18 @@
   justify-content: space-between;
   @include to(1920px) {
     justify-content: flex-start;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(1440px) {
     padding: 80px 132px 80px 132px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(992px) {
     padding: 60px 0 60px 82px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(575px) {
     padding: 30px 0 80px 20px;
@@ -702,19 +733,23 @@
   }
   &-description {
     margin-left: 197px;
-    width: 1400px;
+    // width: 1400px;
     @include to(1920px) {
       margin-left: 197px;
-      width: 1076px;
-      width: calc((100vw - (9.73958vw * 2)) - 197px - 15vw);
+      margin-left: var(--side-padding);
+      // width: 1076px;
+      // width: calc((100vw - (9.73958vw * 2)) - 197px - 15vw);
+      width: 75%;
     }
     @include to(1440px) {
       margin-left: 127px;
-      width: 767px;
+      margin-left: var(--side-padding);
+      // width: 767px;
     }
     @include to(992px) {
       margin-left: 46px;
-      width: 502px;
+      margin-left: var(--side-padding);
+      // width: 502px;
     }
     @include to(575px) {
       margin-left: 0;
@@ -899,11 +934,17 @@
   display: flex;
   flex-direction: column;
   // justify-content: space-between;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
   @include to(1440px) {
     padding: 80px 132px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(992px) {
     padding: 60px 82px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(575px) {
     padding: 30px 20px;
@@ -942,18 +983,20 @@
   }
   &-description {
     margin-left: 197px;
-    width: 1400px;
+    margin-left: var(--side-padding);
+    // width: 1400px;
+    width: 75%;
     @include to(1920px) {
-      margin-left: 197px;
-      width: 1076px;
+      // margin-left: 197px;
+      // width: 1076px;
     }
     @include to(1440px) {
-      margin-left: 127px;
-      width: 767px;
+      // margin-left: 127px;
+      // width: 767px;
     }
     @include to(992px) {
-      margin-left: 71px;
-      width: 421px;
+      // margin-left: 71px;
+      // width: 421px;
     }
     @include to(575px) {
       margin-left: 0;
@@ -961,7 +1004,9 @@
     }
     &-list {
       display: flex;
-      flex-wrap: wrap;
+      @include to(1024px){
+        flex-wrap: wrap;
+      }
     }
     &-item {
       margin: 0 100px 40px 0;
@@ -1017,23 +1062,25 @@
   grid-template-columns: 30px auto 30px;
   margin-top: 60px;
   width: 1400px;
+  width: 75%;
   margin-left: auto;
+  margin-right: var(--side-padding);
   @include to(1920px) {
-    width: 1076px;
+    // width: 1076px;
   }
   @include to(1440px) {
     // grid-template-rows: 20px auto 20px 7px 7px 7px;
     grid-template-rows: 20px 235px 20px 7px 7px 7px;
     grid-template-columns: 20px auto 20px;
     margin-top: 60px;
-    width: 767px;
+    // width: 767px;
   }
   @include to(992px) {
     // grid-template-rows: 10px auto 10px 5px 5px 5px;
     grid-template-rows: 10px 130px 10px 5px 5px 5px;
     grid-template-columns: 10px auto 10px;
     margin-top: 35px;
-    width: 421px;
+    // width: 421px;
   }
   @include to(575px) {
     // grid-template-rows: 10px auto 10px 5px 5px 5px;
@@ -1041,6 +1088,7 @@
     grid-template-columns: 10px auto 10px;
     margin-top: 0;
     width: calc(100% + 40px);
+    margin-right: 0;
     margin-left: -20px;
   }
   .horizontal-black {

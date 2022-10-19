@@ -34,6 +34,8 @@ header {
     @include to(1440px) {
       width: 264px;
       height: 25px;
+      width: 200px;
+      height: 22px;
     }
     @include to(575px) {
       display: none;
@@ -140,8 +142,8 @@ header {
       // transition: $transition-fuction;
       @include to(1680px) {
         margin-right: 50px;
-        padding: 8px 20px;
-        font-size: 20px;
+        padding: 8px 15px;
+        font-size: 16px;
       }
       @include to(992px) {
         display: none;

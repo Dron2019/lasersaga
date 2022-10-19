@@ -3,11 +3,17 @@
   width: 100%;
   justify-content: space-between;
   padding: 100px 187px 60px 187px;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
   @include to(1440px) {
     padding: 80px 132px 50px 132px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(992px) {
     padding: 30px 82px 50px 82px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(575px) {
     padding: 15px 20px 90px 20px;
@@ -75,11 +81,17 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 0 187px 40px 187px;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
   @include to(1440px) {
     padding: 0 132px 30px 132px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(992px) {
     padding: 0 82px 40px 82px;
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
   }
   @include to(575px) {
     padding: 0 20px 20px 20px;
@@ -134,7 +146,9 @@
         overflow: hidden;
         img {
           // transform: scale(0.5);
+          transform: scale(0.75);
           object-fit: none;
+          object-fit: contain;
           transition: $transition-fuction;
           @include to(992px) {
             transform: scale(0.6);
@@ -216,7 +230,7 @@
             opacity: 1;
           }
           img {
-            transform: scale(1.1);
+            transform: scale(1);
           }
         }
         .line-hover1,

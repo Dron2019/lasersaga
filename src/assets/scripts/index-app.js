@@ -20,7 +20,7 @@ global.axios = axios;
 window.initCustomSlider = InitCustomSlider;
 window.locoScroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
-  smooth: true,
+  smooth: false,
   smoothMobile: false,
   inertia: 1.1,
 });

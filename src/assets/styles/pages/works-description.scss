@@ -304,6 +304,9 @@
       @include to(575px) {
         width: 85%;
       }
+      @media (-webkit-device-pixel-ratio: 1.25) and (max-width: 1440px) and (min-width: 601px) {
+        width: 80%;
+      }
       &-content {
         border: 1px solid #414141;
         position: relative;
