@@ -101,6 +101,11 @@
     padding-right: var(--side-padding);
     height: 75vh;
     position: relative;
+    @media (-webkit-device-pixel-ratio: 1.25) and (min-width: 1320px) {
+      padding-top: 75px;
+      --side-padding: 150px;
+      height: 65vh;
+    }
     @include to(1440px) {
       padding: 80px 132px 60px 132px;
       padding-left: var(--side-padding);
@@ -123,10 +128,17 @@
       right: 50px;
       width: 50px;
       height: 50px;
+      z-index: 4;
       fill: none;
       stroke: $black;
       transition: $transition-fuction;
       cursor: pointer;
+      @media (-webkit-device-pixel-ratio: 1.25) and (min-width: 1320px) {
+        top: 35px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
       @include to(1440px) {
         width: 40px;
         height: 40px;
@@ -239,7 +251,11 @@
           color: #000000;
           background: $white !important;
           position: relative;
-          
+          @media (-webkit-device-pixel-ratio: 1.25) and (min-width: 1320px) {
+            height: 48px;
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
           @include to(1440px) {
             // width: 573px;
             height: 68px;
@@ -262,6 +278,9 @@
             line-height: 100%;
             letter-spacing: -0.03em;
             color: #000000;
+            @media (-webkit-device-pixel-ratio: 1.25) and (min-width: 1320px) {
+              font-size: 16px;
+            }
             @include to(1440px) {
               font-size: 18px;
             }
@@ -277,6 +296,10 @@
           width: 420px;
           height: 100px;
           margin-top: 10px;
+          @media (-webkit-device-pixel-ratio: 1.25) and (min-width: 1320px) {
+            width: 300px;
+            height: 79px;
+          }
           @include to(1440px) {
             width: 300px;
             height: 79px;
@@ -310,6 +333,9 @@
           letter-spacing: -0.03em;
           padding-left: 40px;
           padding-top: 22px;
+          @media (-webkit-device-pixel-ratio: 1.25) and (min-width: 1320px) {
+            font-size: 16px;
+          }
           @include to(1440px){
             font-size: 18px;
             padding-left: 30px;
@@ -699,6 +725,7 @@
   .input-message {
     // display: none;
     font-size: 12px;
+    line-height: 100%;
     color: #ff2800;
     position: absolute;
     display: initial;
